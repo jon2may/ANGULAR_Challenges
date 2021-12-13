@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ValidationButtonComponent } from './validation-button.component';
+import { HeroesComponent } from './heroes.component';
 
-describe('ValidationButtonComponent', () => {
-  let component: ValidationButtonComponent;
-  let fixture: ComponentFixture<ValidationButtonComponent>;
+describe('HeroesComponent', () => {
+  let component: HeroesComponent;
+  let fixture: ComponentFixture<HeroesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ValidationButtonComponent ]
+      declarations: [ HeroesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ValidationButtonComponent);
+    fixture = TestBed.createComponent(HeroesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
