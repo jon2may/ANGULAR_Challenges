@@ -1,4 +1,30 @@
 <h1>{{title}}</h1>
 <app-heroes></app-heroes>
 
+<div>
+  <h2>Liste des courses</h2>
+  <ul>
+    <li>Pommes de terre</li>
+    <li [ngStyle]="{backgroundColor: isThisIngredientVital ? 'red' : 'yellow'}">Fromage</li>
+    <li>Jambon</li>
+    <li [ngClass]="{'vital': isThisIngredientVital}" >Cornichons</li>
+    <li>Chou-fleur</li>
+  </ul>
+
+  <h2>Liste des invités</h2>
+  <ul *ngIf='displayGuestList'>
+    <li>Sophie</li>
+    <li>Paul</li>
+    <li>Monique</li>
+    <li>Robert</li>
+  </ul>
+
+  <h2>Liste des chansons</h2>
+  <ul *ngFor="let song of songList">
+    <li>{{song}}</li>
+  </ul>
+
+
+</div>
+
 <router-outlet></router-outlet>
