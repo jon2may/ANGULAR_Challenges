@@ -1,0 +1,14 @@
+<img [src]='User.photo' [alt]='User.firstName' />
+
+<p>Prénom : {{User.firstName}}</p>
+<p>Nom : {{User.name}}</p>
+
+<label for="name">Ma chanson pref' : </label>
+<input id="name" [(ngModel)]="User.quote">
+
+<p>Allez, chantes avec moi !</p>
+<p>"Humm Whooohooo.... {{User.quote}}"</p>
+
+<button (click)='showAge()'>Si tu veux connaître mon âge, cliques ici</button>
+
+<p *ngIf="ageVisible"> {{User.age}} </p>
